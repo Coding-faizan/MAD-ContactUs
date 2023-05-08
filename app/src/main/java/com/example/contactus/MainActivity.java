@@ -9,14 +9,14 @@ import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
 
-    private Button contactUsButton,githubButton;
+    Button contactUsButton,githubButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        contactUsButton = findViewById(R.id.ContactUs);
+        contactUsButton = (Button) findViewById(R.id.ContactUs);
         contactUsButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -28,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void openContactActivity(){
-        Intent intent = new Intent(this,ContactUs.class);
+        Intent intent = new Intent(MainActivity.this,ContactUs.class);
         startActivity(intent);
     }
 }
