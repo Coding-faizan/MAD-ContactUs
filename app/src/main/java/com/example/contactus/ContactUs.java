@@ -40,6 +40,5 @@ public class ContactUs extends AppCompatActivity {
         descriptionText = findViewById(R.id.description);
         sendButton = findViewById(R.id.button);
 
-
     }
 }
