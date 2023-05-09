@@ -7,6 +7,96 @@
     tools:context=".ContactUs">
 
     <LinearLayout
+        android:id="@+id/visitWebsiteLayout"
+        android:layout_width="386dp"
+        android:layout_height="42dp"
+        android:background="#1EC0E9"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.52"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/goodwordLayout">
+
+        <ImageView
+            android:layout_width="49dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/baseline_web_24"
+            android:layout_marginLeft="10dp" />
+
+        <TextView
+            android:id="@+id/website"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:text="VISIT OUR WEBSITE"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/goodwordLayout"
+        android:layout_width="386dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="16dp"
+        android:background="#E91E1E"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.52"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/whatsappUsaLayout">
+
+        <ImageView
+            android:layout_width="46dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/baseline_whatsapp_24" />
+
+        <TextView
+            android:id="@+id/goodbook"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:text="GOODWORD BOOKS"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/whatsappPkLayout"
+        android:layout_width="386dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="11dp"
+        android:background="@color/teal_700"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView">
+
+        <ImageView
+            android:layout_width="46dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/baseline_whatsapp_24" />
+
+        <TextView
+            android:id="@+id/text1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:text="WHATSAPP (PK)"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <LinearLayout
         android:id="@+id/linearLayout"
         android:layout_width="410dp"
         android:layout_height="67dp"
@@ -88,22 +178,23 @@
         <EditText
             android:id="@+id/title"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="48dp"
             android:background="@drawable/rounded_title"
             android:ems="10"
             android:hint="Title"
             android:inputType="textPersonName"
+
             android:textSize="16sp" />
 
         <EditText
             android:id="@+id/description"
             android:layout_width="match_parent"
-            android:layout_height="185dp"
+            android:layout_height="176dp"
             android:layout_marginTop="10dp"
             android:background="@drawable/rounded_title"
             android:ems="10"
-            android:hint="Please write your meassage"
             android:gravity="top|left"
+            android:hint="Please write your meassage"
             android:inputType="textPersonName"
             android:textSize="16sp" />
     </LinearLayout>
@@ -122,15 +213,16 @@
         app:layout_constraintTop_toBottomOf="@+id/button" />
 
     <LinearLayout
-        android:id="@+id/linearLayout2"
+        android:id="@+id/whatsappUsaLayout"
         android:layout_width="386dp"
         android:layout_height="42dp"
-        android:layout_marginTop="11dp"
-        android:background="@color/teal_700"
+        android:layout_marginTop="15dp"
+        android:background="@color/purple_700"
         android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.52"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView">
+        app:layout_constraintTop_toBottomOf="@+id/whatsappPkLayout">
 
         <ImageView
             android:layout_width="46dp"
@@ -139,15 +231,15 @@
             android:src="@drawable/baseline_whatsapp_24" />
 
         <TextView
-            android:id="@+id/whatsappPk"
+            android:id="@+id/usawhat"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textColor="@color/white"
             android:layout_gravity="center"
             android:layout_marginLeft="10dp"
-            android:textSize="20sp"
             android:layout_weight="1"
-            android:text="WHATSAPP (PK)" />
+            android:text="WHATSAPP (USA)"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
     </LinearLayout>
 
 
