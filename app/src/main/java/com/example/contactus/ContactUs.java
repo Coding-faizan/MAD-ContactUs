@@ -3,14 +3,24 @@ package com.example.contactus;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.content.pm.PackageManager;
+import android.content.pm.ResolveInfo;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.ImageView;
+import android.widget.Toast;
+
+import java.util.List;
 
 public class ContactUs extends AppCompatActivity {
 
     private ImageView backButtonImageview;
+
+    private EditText titleText,descriptionText;
+    private Button sendButton;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
@@ -22,13 +32,14 @@ public class ContactUs extends AppCompatActivity {
         backButtonImageview.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                backToMainActivity();
+                onBackPressed();
             }
         });
-    }
 
-    public void backToMainActivity(){
-        Intent intent = new Intent(ContactUs.this,MainActivity.class);
-        startActivity(intent);
+        titleText = findViewById(R.id.title);
+        descriptionText = findViewById(R.id.description);
+        sendButton = findViewById(R.id.button);
+
+
     }
 }
